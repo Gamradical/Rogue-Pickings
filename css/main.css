@@ -138,3 +138,36 @@ footer span {
 	color: #77a466;
 	font-size: 14px;
 }
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+		.bottom-section {
+				width: 100%;
+				align-items: flex-start;
+				justify-content: space-around;
+				border-top: 1px solid #eee;
+		}
+		.section-one,
+		.section-two,
+		.section-three {
+				border: none;
+		}
+		.section-one,
+	 	.section-three {
+				width: 30%;
+		}
+		.section-two {
+				width: 30%;
+				padding: 0 2.5% 0 2.5%;
+				border-left: 1px solid #eee;
+				border-right: 1px solid #eee;
+		}
+		.section-three {
+				padding-right: 2.5%;
+		}
+}
+
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+
+}
