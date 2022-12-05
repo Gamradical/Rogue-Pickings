@@ -5,18 +5,19 @@ html {
 body {
 	font-size: 1em;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
-.container{
+.container {
+	display: flex;
 	max-width: 1200px;
 	width: 90%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+
 }
 
 h1,
@@ -44,6 +45,7 @@ p {
 /*The widths are in a percentage!*/
 header {
 	display: flex;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
 	flex-flow: row wrap;
@@ -58,15 +60,16 @@ header h1 span {
 
 
 header nav ul li {
-	display: flex;
-	width: 90%;
-	justify-content: center;
+	list-style: none;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1em;
 	line-height: 2.5em;
 }
 header nav ul li a{
+	width: 100%;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	text-decoration: none;
 	color:#77a466;
@@ -75,10 +78,9 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: flex-start;
+	align-items: center;
 	flex-flow: row wrap;
 }
 
@@ -86,7 +88,6 @@ header nav ul li a{
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 	border-top: 3px solid #77a466;
-
 }
 
 .main-title h2 {
@@ -102,13 +103,12 @@ header nav ul li a{
 .section-three {
 	border-top: 1px solid #eee;
 }
-
 .menu {
-	list-style: none;
-	padding: 0;
-
+	 width: 100%;
+	 padding: 0;
 }
 .menu li {
+	list-style: none;
 	color:#77a466;
 	font-size: 1em;
 	line-height: 2.5em;
@@ -127,6 +127,7 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
+	width: 100%;
 	border-top: 3px solid #eee;
 	display: flex;
 	align-items: center;
@@ -163,7 +164,7 @@ footer span {
 				border-right: 1px solid #eee;
 		}
 		.section-three {
-				padding-right: 2.5%;
+				padding-right: 2%;
 		}
 }
 
