@@ -53,6 +53,8 @@ header {
 
 header h1 {
 	border-bottom: 3px solid #77a466;
+	width: 100%;
+	text-align: center;
 }
 header h1 span {
 	color: #77a466;
@@ -103,6 +105,7 @@ header nav ul li a{
 .section-three {
 	border-top: 1px solid #eee;
 }
+
 .menu {
 	 width: 100%;
 	 padding: 0;
@@ -128,7 +131,7 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	width: 100%;
-	border-top: 3px solid #eee;
+	border-top: 1px solid #eee;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -142,29 +145,32 @@ footer span {
 
 @media all and (min-width:768px) {
     /* Tablet styles here */
+
+		header h1{
+			padding-bottom: 2%;
+		}
+
 		.bottom-section {
 				width: 100%;
-				align-items: flex-start;
 				justify-content: space-around;
+				align-items: flex-start;
 				border-top: 1px solid #eee;
 		}
+
 		.section-one,
 		.section-two,
 		.section-three {
+				width: 30%;
 				border: none;
 		}
-		.section-one,
-	 	.section-three {
-				width: 30%;
-		}
 		.section-two {
-				width: 30%;
-				padding: 0 2.5% 0 2.5%;
-				border-left: 1px solid #eee;
 				border-right: 1px solid #eee;
-		}
-		.section-three {
-				padding-right: 2%;
+				border-left: 1px solid #eee;
+				padding: 0 2.5% 0 2.5%;
+			}
+
+		h3 {
+			padding-top: 2.5%;
 		}
 }
 
