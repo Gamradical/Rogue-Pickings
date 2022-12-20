@@ -178,17 +178,18 @@ footer span {
     /* Desktop styles here */
 		header {
 			flex-flow: nowrap;
-			justify-content: space-between;
 		}
 		header h1 {
 			border-bottom: none;
 			text-align: left;
+			width: 60%;
+			padding: 0;
 		}
 		header nav ul {
 			display: flex;
 			width: 40%;
 	}
-		header nav ul li a {
-			justify-content: space-between;
+		header nav ul li a{
+		padding: 1em;
 		}
 }
